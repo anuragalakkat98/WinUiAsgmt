@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="DotNetWinUiApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:local="using:DotNetWinUiApp.ViewModels"
+    Title="Trip Conflict List">
+
+    <Grid>
+        <ListView x:Name="TripsListView" ItemsSource="{x:Bind ViewModel.Trips}">
+            <ListView.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Service ID" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Trip ID" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Direction" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Start Time" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="Train Type" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Length (n.v.)" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="PostFix" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Start Location" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="End Location" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="# Conflicts" Width="100" FontWeight="Bold"/>
+                </StackPanel>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:TripViewModel">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{x:Bind ServiceId}" Width="100">
+                            <ToolTipService.ToolTip>
+                                <ToolTip Content="{x:Bind ToolTipString}"/>
+                            </ToolTipService.ToolTip>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind TripId}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind Direction}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind StartTime}" Width="150">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind TrainType}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind Length}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind PostFix}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind StartLocation}" Width="150">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind EndLocation}" Width="150">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind Conflicts}" Width="100">
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

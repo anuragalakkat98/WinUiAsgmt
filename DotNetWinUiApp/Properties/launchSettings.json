@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DotNetWinUiApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DotNetWinUiApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\bin\Debug\net8.0\DotNetWinUiApp.ViewModels.deps.json
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\bin\Debug\net8.0\DotNetWinUiApp.ViewModels.dll
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\bin\Debug\net8.0\DotNetWinUiApp.ViewModels.pdb
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.csproj.AssemblyReference.cache
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.AssemblyInfoInputs.cache
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.AssemblyInfo.cs
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.csproj.CoreCompileInputs.cache
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.dll
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\refint\DotNetWinUiApp.ViewModels.dll
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\DotNetWinUiApp.ViewModels.pdb
+D:\DotNetWinUiApp\DotNetWinUiApp.ViewModels\obj\Debug\net8.0\ref\DotNetWinUiApp.ViewModels.dll

@@ -1,0 +1,1 @@
+D:\DotNetWinUiApp\DotNetWinUiApp\DotNetWinUiApp.csproj;x86

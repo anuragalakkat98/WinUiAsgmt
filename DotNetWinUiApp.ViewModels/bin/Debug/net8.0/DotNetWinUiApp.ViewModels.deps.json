@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DotNetWinUiApp.ViewModels/1.0.0": {
+        "dependencies": {
+          "MvvmGen": "1.3.0"
+        },
+        "runtime": {
+          "DotNetWinUiApp.ViewModels.dll": {}
+        }
+      },
+      "MvvmGen/1.3.0": {
+        "runtime": {
+          "lib/netstandard2.0/MvvmGen.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetWinUiApp.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MvvmGen/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o+MCVV+7KTcd+871HeirjKHzM2PfFr89eaCqTZGggWfH25nrSgm1jzGojGozJ+V/B+m679YkApiU7H4cu005EQ==",
+      "path": "mvvmgen/1.3.0",
+      "hashPath": "mvvmgen.1.3.0.nupkg.sha512"
+    }
+  }
+}
