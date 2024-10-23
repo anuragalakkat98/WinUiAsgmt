@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:ConnectionId='1'
+    x:Class="DotNetWinUiApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:DotNetWinUiApp.Model"
+    mc:Ignorable="d"
+    Title="Trip Conflict List">
+
+    <Grid>
+        <ListView x:ConnectionId='2' x:Name="TripsListView"                                       >
+            <ListView.Header>
+                <StackPanel Orientation="Horizontal">
+                    <!--<TextBlock Text="Service ID" Width="100" FontWeight="Bold"/>-->
+                    <Button Width="100">
+                        <StackPanel Orientation="Horizontal">
+                            <Viewbox MaxHeight="10" MaxWidth="200">
+                                <SymbolIcon  Symbol="Sort" Margin="1,0,0,0"/>
+                            </Viewbox>
+                            <TextBlock Text="Service ID" Margin="5,0,0,0" />
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="Trip ID" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Direction" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Start Time" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="Train Type" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Length (n.v.)" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="PostFix" Width="100" FontWeight="Bold"/>
+                    <TextBlock Text="Start Location" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="End Location" Width="150" FontWeight="Bold"/>
+                    <TextBlock Text="# Conflicts" Width="100" FontWeight="Bold"/>
+                </StackPanel>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate                        >
+                    <StackPanel x:ConnectionId='4' Orientation="Horizontal">
+                        <TextBlock x:ConnectionId='5'                           Width="100"                                      >
+                            <ToolTipService.ToolTip>
+                                <ToolTip x:ConnectionId='15'                                  />
+                            </ToolTipService.ToolTip>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='6'                        Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='7'                           Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='8'                           Width="150"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='9'                           Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='10'                        Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='11'                         Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='12'                               Width="150"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='13'                             Width="150"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+
+                        <TextBlock x:ConnectionId='14'                           Width="100"                                      >
+                            <TextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Reservation"/>
+                                    <MenuFlyoutItem Text="Route Plan"/>
+                                    <MenuFlyoutItem Text="Save Trip"/>
+                                </MenuFlyout>
+                            </TextBlock.ContextFlyout>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>
+

@@ -5,15 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:DotNetWinUiApp.Model"
     mc:Ignorable="d"
-    xmlns:local="using:DotNetWinUiApp.ViewModels"
     Title="Trip Conflict List">
 
     <Grid>
         <ListView x:Name="TripsListView" ItemsSource="{x:Bind ViewModel.Trips}">
             <ListView.Header>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Service ID" Width="100" FontWeight="Bold"/>
+                    <!--<TextBlock Text="Service ID" Width="100" FontWeight="Bold"/>-->
+                    <Button Width="100">
+                        <StackPanel Orientation="Horizontal">
+                            <Viewbox MaxHeight="10" MaxWidth="200">
+                                <SymbolIcon  Symbol="Sort" Margin="1,0,0,0"/>
+                            </Viewbox>
+                            <TextBlock Text="Service ID" Margin="5,0,0,0" />
+                        </StackPanel>
+                    </Button>
                     <TextBlock Text="Trip ID" Width="100" FontWeight="Bold"/>
                     <TextBlock Text="Direction" Width="100" FontWeight="Bold"/>
                     <TextBlock Text="Start Time" Width="150" FontWeight="Bold"/>
@@ -26,15 +34,15 @@
                 </StackPanel>
             </ListView.Header>
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:TripViewModel">
+                <DataTemplate x:DataType="local:Trip">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{x:Bind ServiceId}" Width="100">
+                        <TextBlock Text="{x:Bind ServiceId}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <ToolTipService.ToolTip>
-                                <ToolTip Content="{x:Bind ToolTipString}"/>
+                                <ToolTip Content="{x:Bind ToolTipContent}"/>
                             </ToolTipService.ToolTip>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind TripId}" Width="100">
+                        <TextBlock Text="{x:Bind TripId}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -44,7 +52,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind Direction}" Width="100">
+                        <TextBlock Text="{x:Bind Direction}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -54,7 +62,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind StartTime}" Width="150">
+                        <TextBlock Text="{x:Bind StartTime}" Width="150" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -64,7 +72,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind TrainType}" Width="100">
+                        <TextBlock Text="{x:Bind TrainType}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -74,7 +82,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind Length}" Width="100">
+                        <TextBlock Text="{x:Bind Length}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -84,7 +92,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind PostFix}" Width="100">
+                        <TextBlock Text="{x:Bind PostFix}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -94,7 +102,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind StartLocation}" Width="150">
+                        <TextBlock Text="{x:Bind StartLocation}" Width="150" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -104,7 +112,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind EndLocation}" Width="150">
+                        <TextBlock Text="{x:Bind EndLocation}" Width="150" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>
@@ -114,7 +122,7 @@
                             </TextBlock.ContextFlyout>
                         </TextBlock>
 
-                        <TextBlock Text="{x:Bind Conflicts}" Width="100">
+                        <TextBlock Text="{x:Bind Conflicts}" Width="100" Foreground="{x:Bind ForegroundColor}">
                             <TextBlock.ContextFlyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Reservation"/>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj": {}
+    "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj": {}
   },
   "projects": {
-    "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj": {
+    "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
+        "projectUniqueName": "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
         "projectName": "DotNetWinUiApp.ViewModels",
-        "projectPath": "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
+        "projectPath": "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
         "packagesPath": "C:\\Users\\Anurag.Alakkat\\.nuget\\packages\\",
-        "outputPath": "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\obj\\",
+        "outputPath": "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

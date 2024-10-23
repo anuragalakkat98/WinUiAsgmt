@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f0d8GV0nTkc=",
+  "dgSpecHash": "jJ1YoLooZNM=",
   "success": true,
-  "projectFilePath": "D:\\DotNetWinUiApp\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
+  "projectFilePath": "D:\\winUiAsgmt\\DotNetWinUiApp.ViewModels\\DotNetWinUiApp.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anurag.Alakkat\\.nuget\\packages\\mvvmgen\\1.3.0\\mvvmgen.1.3.0.nupkg.sha512"
   ],

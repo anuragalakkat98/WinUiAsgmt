@@ -1,26 +1,24 @@
-using DotNetWinUiApp.ViewModels;
-using Microsoft.UI;
+using DotNetWinUiApp.Data;
+using DotNetWinUiApp.ViewModel;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Media;
-using System.Collections.ObjectModel;
-using System.Linq;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
 
 namespace DotNetWinUiApp
 {
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainWindow : Window
     {
         public MainWindow()
         {
             this.InitializeComponent();
-            ViewModel = new MainViewModel();
+            ViewModel = new MainViewModel(new TripDataProvider());
+            TripsListView.DataContext = ViewModel;
+            TripsListView.Loaded += TripsListView_Loaded;
         }
 
-        public MainViewModel ViewModel { get; set; }
+        private async void TripsListView_Loaded(object sender, RoutedEventArgs e)
+        {
+            await ViewModel.LoadAsync();
+        }
+
+        public MainViewModel ViewModel { get; }
     }
 }
