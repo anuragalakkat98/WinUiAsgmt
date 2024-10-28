@@ -10,37 +10,37 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>01eb12a6-d656-4e66-b212-8060f6538b5f</PackageIdentityName>
     <PackageIdentityPublisher>CN=anurag.alakkat</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\winUiAsgmt\DotNetWinUiApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\WinUiAsgmt\DotNetWinUiApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <LayoutDir>D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.runtimeconfig.json">
       <PackagePath>DotNetWinUiApp.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.dll">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.dll">
       <PackagePath>DotNetWinUiApp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DotNetWinUiApp.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\uno.winui\5.2.132\lib\net7.0-windows10.0.19041.0\Uno.UI.Toolkit\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\uno.winui\5.2.132\lib\net7.0-windows10.0.19041.0\Uno.UI.Toolkit\Themes\Generic.xbf">
       <PackagePath>Uno.UI.Toolkit/Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.10\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
@@ -700,19 +700,19 @@
     <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\lib_manual\net6.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\lib_manual\net6.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\uno.winui\5.2.132\lib\net7.0-windows10.0.19041.0\Uno.UI.Toolkit.dll">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\uno.winui\5.2.132\lib\net7.0-windows10.0.19041.0\Uno.UI.Toolkit.dll">
       <PackagePath>Uno.UI.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.deps.json">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.deps.json">
       <PackagePath>DotNetWinUiApp.deps.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\uno.winui\5.2.132/lib/net7.0-windows10.0.19041.0/Uno.UI.Toolkit.pri">
+    <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\uno.winui\5.2.132/lib/net7.0-windows10.0.19041.0/Uno.UI.Toolkit.pri">
       <PackagePath>Uno.UI.Toolkit.pri</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\colorcode.winui\2.0.13\lib\net5.0-windows10.0.18362\ColorCode.WinUI.pri">
@@ -745,59 +745,59 @@
     <AppxPackagedFile Include="C:\Users\Anurag.Alakkat\.nuget\packages\communitytoolkit.winui.ui.controls.primitives\7.1.2\lib\net5.0-windows10.0.18362\CommunityToolkit.WinUI.UI.Controls.Primitives.pri">
       <PackagePath>CommunityToolkit.WinUI.UI.Controls.Primitives.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\winUiAsgmt\DotNetWinUiApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
+    <ResolvedSDKReference Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
       <Name>Microsoft.WindowsAppRuntime.1.6</Name>
       <Version>6000.266.2241.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.266.2241.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <AppxLocation>C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
+    <ResolvedSDKReference Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
       <Name>Microsoft.WindowsAppRuntime.1.6</Name>
       <Version>6000.266.2241.0</Version>
       <Architecture>win32</Architecture>
       <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.266.2241.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <AppxLocation>C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix">
+    <ResolvedSDKReference Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix">
       <Name>Microsoft.WindowsAppRuntime.1.6</Name>
       <Version>6000.266.2241.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.266.2241.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <AppxLocation>C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix">
+    <ResolvedSDKReference Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix">
       <Name>Microsoft.WindowsAppRuntime.1.6</Name>
       <Version>6000.266.2241.0</Version>
       <Architecture>arm64</Architecture>
       <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.266.2241.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Anurag.Alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <AppxLocation>C:\Users\anurag.alakkat\.nuget\packages\microsoft.windowsappsdk\1.6.240923002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
   </ItemGroup>

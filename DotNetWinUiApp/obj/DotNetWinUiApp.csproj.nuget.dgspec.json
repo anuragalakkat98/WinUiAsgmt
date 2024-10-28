@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\winUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj": {}
+    "D:\\WinUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj": {}
   },
   "projects": {
-    "D:\\winUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj": {
+    "D:\\WinUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\winUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj",
+        "projectUniqueName": "D:\\WinUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj",
         "projectName": "DotNetWinUiApp",
-        "projectPath": "D:\\winUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj",
-        "packagesPath": "C:\\Users\\Anurag.Alakkat\\.nuget\\packages\\",
-        "outputPath": "D:\\winUiAsgmt\\DotNetWinUiApp\\obj\\",
+        "projectPath": "D:\\WinUiAsgmt\\DotNetWinUiApp\\DotNetWinUiApp.csproj",
+        "packagesPath": "C:\\Users\\anurag.alakkat\\.nuget\\packages\\",
+        "outputPath": "D:\\WinUiAsgmt\\DotNetWinUiApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anurag.Alakkat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anurag.alakkat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

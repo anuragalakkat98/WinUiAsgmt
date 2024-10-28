@@ -1,1 +1,1 @@
-D:\winUiAsgmt\DotNetWinUiApp\DotNetWinUiApp.csproj;x64
+D:\WinUiAsgmt\DotNetWinUiApp\DotNetWinUiApp.csproj;x64

@@ -20,5 +20,21 @@ namespace DotNetWinUiApp
         }
 
         public MainViewModel ViewModel { get; }
+
+        private bool _sortDirectionAsc = true;
+
+        //private void OnServiceIdHeaderClicked(object sender, RoutedEventArgs e)
+        //{
+        //    ViewModel.SortTripsByServiceId(_sortDirectionAsc);
+        //    _sortDirectionAsc = !_sortDirectionAsc;
+        //}
+        private void OnColumnHeaderClicked(object sender, RoutedEventArgs e)
+        {
+            if (sender is FrameworkElement header && header.Tag is string propertyName)
+            {
+                ViewModel.SortTripsByProperty(propertyName, _sortDirectionAsc);
+                _sortDirectionAsc = !_sortDirectionAsc;
+            }
+        }
     }
 }

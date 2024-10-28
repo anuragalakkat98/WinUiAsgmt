@@ -10,130 +10,203 @@
     Title="Trip Conflict List">
 
     <Grid>
-        <ListView x:Name="TripsListView" ItemsSource="{x:Bind ViewModel.Trips}">
-            <ListView.Header>
-                <StackPanel Orientation="Horizontal">
-                    <!--<TextBlock Text="Service ID" Width="100" FontWeight="Bold"/>-->
-                    <Button Width="100">
-                        <StackPanel Orientation="Horizontal">
-                            <Viewbox MaxHeight="10" MaxWidth="200">
-                                <SymbolIcon  Symbol="Sort" Margin="1,0,0,0"/>
-                            </Viewbox>
-                            <TextBlock Text="Service ID" Margin="5,0,0,0" />
-                        </StackPanel>
-                    </Button>
-                    <TextBlock Text="Trip ID" Width="100" FontWeight="Bold"/>
-                    <TextBlock Text="Direction" Width="100" FontWeight="Bold"/>
-                    <TextBlock Text="Start Time" Width="150" FontWeight="Bold"/>
-                    <TextBlock Text="Train Type" Width="100" FontWeight="Bold"/>
-                    <TextBlock Text="Length (n.v.)" Width="100" FontWeight="Bold"/>
-                    <TextBlock Text="PostFix" Width="100" FontWeight="Bold"/>
-                    <TextBlock Text="Start Location" Width="150" FontWeight="Bold"/>
-                    <TextBlock Text="End Location" Width="150" FontWeight="Bold"/>
-                    <TextBlock Text="# Conflicts" Width="100" FontWeight="Bold"/>
-                </StackPanel>
-            </ListView.Header>
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Trip">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{x:Bind ServiceId}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <ToolTipService.ToolTip>
-                                <ToolTip Content="{x:Bind ToolTipContent}"/>
-                            </ToolTipService.ToolTip>
-                        </TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-                        <TextBlock Text="{x:Bind TripId}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+        <ComboBox x:Name="ControlDropdown" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Width="150" PlaceholderText="Control">
+            <ComboBoxItem Content="Option 1"/>
+            <ComboBoxItem Content="Option 2"/>
+            <ComboBoxItem Content="Option 3"/>
+        </ComboBox>
 
-                        <TextBlock Text="{x:Bind Direction}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+        <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Margin="10">
+            <StackPanel>
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="{x:Bind StartTime}" Width="150" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+                    <Border BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="ServiceId" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Service ID" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TripId" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Trip ID" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Direction" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Direction" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartTime" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Start Time" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TrainType" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Train Type" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Length" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Length" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="PostFix" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="PostFix" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="7" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartLocation" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Start Location" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="8" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="EndLocation" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="End Location" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                    <Border Grid.Column="9" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                        <Button Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Conflicts" Click="OnColumnHeaderClicked">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="# Conflicts" Margin="1,0,0,0" />
+                                <Viewbox Height="16" Width="16" Margin="5,0,0,0">
+                                    <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                    </Border>
+                </Grid>
 
-                        <TextBlock Text="{x:Bind TrainType}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="400">
+                    <ItemsControl x:Name="TripsListView" ItemsSource="{x:Bind ViewModel.Trips}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="local:Trip">
+                                <Grid HorizontalAlignment="Stretch">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="{x:Bind Length}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+                                    <Border BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind ServiceId}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind TripId}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind Direction}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind StartTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind TrainType}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind Length}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind PostFix}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="7" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind StartLocation}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="8" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind EndLocation}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                    <Border Grid.Column="9" BorderBrush="LightGray" BorderThickness="0,0,1,1">
+                                        <TextBlock Text="{x:Bind Conflicts}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Bind ForegroundColor}"/>
+                                    </Border>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
 
-                        <TextBlock Text="{x:Bind PostFix}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
+        <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="1" Margin="10" CornerRadius="5">
+            <ListBox x:Name="LogPanel" Height="100">
+                <ListBoxItem Content="Log message 1"/>
+                <ListBoxItem Content="Log message 2"/>
+                <ListBoxItem Content="Log message 3"/>
+            </ListBox>
+        </Border>
 
-                        <TextBlock Text="{x:Bind StartLocation}" Width="150" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
-
-                        <TextBlock Text="{x:Bind EndLocation}" Width="150" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
-
-                        <TextBlock Text="{x:Bind Conflicts}" Width="100" Foreground="{x:Bind ForegroundColor}">
-                            <TextBlock.ContextFlyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="Reservation"/>
-                                    <MenuFlyoutItem Text="Route Plan"/>
-                                    <MenuFlyoutItem Text="Save Trip"/>
-                                </MenuFlyout>
-                            </TextBlock.ContextFlyout>
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <Border Grid.Row="3" BorderBrush="LightGray" BorderThickness="1" Margin="10" CornerRadius="5">
+            <TextBlock Text="Automatic Conflict Resolution Status Is Enabled" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Margin="10,10,0,10" Foreground="Green"/>
+        </Border>
     </Grid>
 </Window>
