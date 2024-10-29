@@ -8,7 +8,6 @@
     xmlns:local="using:DotNetWinUiApp.Model"
     mc:Ignorable="d"
     Title="Trip Conflict List">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -16,13 +15,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
-        <ComboBox x:ConnectionId='2' x:Name="ControlDropdown" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Width="150" PlaceholderText="Control">
+        <ComboBox x:ConnectionId='2' x:Name="ControlDropdown" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Width="150" PlaceholderText="Control" FontWeight="Bold">
             <ComboBoxItem Content="Option 1"/>
             <ComboBoxItem Content="Option 2"/>
             <ComboBoxItem Content="Option 3"/>
         </ComboBox>
-
         <Border Grid.Row="1" BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Margin="10">
             <StackPanel>
                 <Grid HorizontalAlignment="Stretch">
@@ -38,11 +35,10 @@
                         <ColumnDefinition Width="1.5*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-
                     <Border BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='26' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="ServiceId"                              >
+                        <Button x:ConnectionId='27' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="ServiceId"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Service ID" Margin="1,0,0,0" />
+                                <TextBlock Text="Service ID" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -50,9 +46,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='25' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TripId"                              >
+                        <Button x:ConnectionId='26' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TripId"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Trip ID" Margin="1,0,0,0" />
+                                <TextBlock Text="Trip ID" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -60,9 +56,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='24' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Direction"                              >
+                        <Button x:ConnectionId='25' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Direction"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Direction" Margin="1,0,0,0" />
+                                <TextBlock Text="Direction" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -70,9 +66,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="3" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='23' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartTime"                              >
+                        <Button x:ConnectionId='24' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartTime"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Start Time" Margin="1,0,0,0" />
+                                <TextBlock Text="Start Time" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -80,9 +76,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="4" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='22' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TrainType"                              >
+                        <Button x:ConnectionId='23' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="TrainType"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Train Type" Margin="1,0,0,0" />
+                                <TextBlock Text="Train Type" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -90,9 +86,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="5" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='21' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Length"                              >
+                        <Button x:ConnectionId='22' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Length"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Length" Margin="1,0,0,0" />
+                                <TextBlock Text="Length" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -100,9 +96,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="6" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='20' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="PostFix"                              >
+                        <Button x:ConnectionId='21' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="PostFix"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="PostFix" Margin="1,0,0,0" />
+                                <TextBlock Text="PostFix" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -110,9 +106,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="7" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='19' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartLocation"                              >
+                        <Button x:ConnectionId='20' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="StartLocation"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Start Location" Margin="1,0,0,0" />
+                                <TextBlock Text="Start Location" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -120,9 +116,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="8" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='18' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="EndLocation"                              >
+                        <Button x:ConnectionId='19' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="EndLocation"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="End Location" Margin="1,0,0,0" />
+                                <TextBlock Text="End Location" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -130,9 +126,9 @@
                         </Button>
                     </Border>
                     <Border Grid.Column="9" BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                        <Button x:ConnectionId='17' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Conflicts"                              >
+                        <Button x:ConnectionId='18' Background="Transparent" HorizontalAlignment="Stretch" BorderBrush="White" Tag="Conflicts"                              >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="# Conflicts" Margin="1,0,0,0" />
+                                <TextBlock Text="# Conflicts" Margin="1,0,0,0" FontWeight="Bold"/>
                                 <Viewbox Height="16" Width="16" Margin="5,0,0,0">
                                     <SymbolIcon Symbol="Sort" Margin="5,0,0,0"/>
                                 </Viewbox>
@@ -140,7 +136,6 @@
                         </Button>
                     </Border>
                 </Grid>
-
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="400">
                     <ItemsControl x:ConnectionId='4' x:Name="TripsListView"                                       >
                         <ItemsControl.ItemTemplate>
@@ -158,9 +153,12 @@
                                         <ColumnDefinition Width="1.5*"/>
                                         <ColumnDefinition Width="1*"/>
                                     </Grid.ColumnDefinitions>
-
                                     <Border BorderBrush="LightGray" BorderThickness="0,0,1,1">
-                                        <TextBlock x:ConnectionId='16'                           HorizontalAlignment="Center" VerticalAlignment="Center"                                      />
+                                        <TextBlock x:ConnectionId='16'                           HorizontalAlignment="Center" VerticalAlignment="Center"                                      >
+                                        <ToolTipService.ToolTip>
+                                            <ToolTip x:ConnectionId='17'                                  />
+                                        </ToolTipService.ToolTip>
+                                        </TextBlock>
                                     </Border>
                                     <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,1">
                                         <TextBlock x:ConnectionId='15'                        HorizontalAlignment="Center" VerticalAlignment="Center"                                      />

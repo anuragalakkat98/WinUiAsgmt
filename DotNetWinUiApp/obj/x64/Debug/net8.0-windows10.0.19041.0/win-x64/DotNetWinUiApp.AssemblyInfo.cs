@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotNetWinUiApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8df1332dbf59c73b66b3161ebe6bf1239454d8b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cbcc02c552372634fd2a5cf5fae1c966f2ba1a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotNetWinUiApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotNetWinUiApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

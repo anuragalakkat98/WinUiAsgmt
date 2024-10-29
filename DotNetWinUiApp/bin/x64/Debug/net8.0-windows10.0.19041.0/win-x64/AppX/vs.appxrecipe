@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-28T11:40:25.730</Modified>
+      <Modified>2024-10-29T05:16:04.031</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-28T11:38:24.117</Modified>
+      <Modified>2024-10-28T12:49:29.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.runtimeconfig.json">
       <PackagePath>DotNetWinUiApp.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DotNetWinUiApp.dll">
       <PackagePath>DotNetWinUiApp.dll</PackagePath>
-      <Modified>2024-10-28T11:40:25.476</Modified>
+      <Modified>2024-10-29T05:16:03.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WinUiAsgmt\DotNetWinUiApp\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DotNetWinUiApp.exe</PackagePath>
-      <Modified>2024-10-28T11:40:25.484</Modified>
+      <Modified>2024-10-29T05:16:03.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anurag.alakkat\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
